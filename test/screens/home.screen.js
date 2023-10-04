@@ -1,10 +1,10 @@
 class HomeScreen {
-    get enterStoreAddress(){
-        return $('id:button_skip')
+    get enterAppHome(){
+        return $('//android.widget.Button[@content-desc="Home"]/android.widget.TextView[1]')
     }
 
-    async goToLogin(){
-        this.enterStoreAddress.click()
+    async goToHome(){
+        this.enterAppHome.click()
     }
 }
 
