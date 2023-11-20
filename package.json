@@ -1,27 +1,27 @@
 {
   "name": "testes-mobile-wdio-app",
   "version": "1.0.0",
-  "description": "Testes no WebdriverIO",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx wdio run ./wdio.conf.js",
+    "wdio": "wdio run ./wdio.conf.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leoguilhon/testes-mobile-Wdio-App.git"
-  },
-  "keywords": [
-    "wdio",
-    "mobile",
-    "tests"
-  ],
-  "author": "Leonardo",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/leoguilhon/testes-mobile-Wdio-App/issues"
+  "devDependencies": {
+    "@wdio/appium-service": "^8.13.12",
+    "@wdio/cli": "^8.13.12",
+    "@wdio/local-runner": "^8.13.12",
+    "@wdio/mocha-framework": "^8.12.1",
+    "@wdio/spec-reporter": "^8.12.2",
+    "appium-uiautomator2-driver": "^2.29.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
   },
-  "homepage": "https://github.com/leoguilhon/testes-mobile-Wdio-App#readme",
   "dependencies": {
-    "@wdio/cli": "^8.23.1"
+    "adb": "^0.2.0",
+    "uiautomator2": "^1.0.2"
   }
 }
